@@ -5,19 +5,25 @@ import { Caixa } from '../components/Caixa'
 import { Button } from '../components/Button'
 import { Logo } from '../components/Logo'
 import { useState } from 'react'
+import { Forgot } from '../components/Forgot'
+import { useNavigate } from 'react-router-dom'
 
 export const Cadastro = () => {
     const [email, setEmail] = useState('')
     const [senha, setSenha] =useState('')
+    const navigate = useNavigate('')
+    function handleClick() {
+      navigate('/')
+    }
   return (
     <>
-    <Logo msg='esquerda'/>
     <Main>
       <Caixa>
-        <h1 className='centro'>Cadastrar-se</h1>
+        <Logo msg='centro'/>
         <Input nome="Email" email={email} />
         <Input nome="Password" senha={senha}/>
         <Input nome="Password" senha={senha}/>
+        <Forgot msg='Ja tenho cadastro' onClick={handleClick}/>
         <Button msg='Cadastrar'/>
       </Caixa>
     </Main>

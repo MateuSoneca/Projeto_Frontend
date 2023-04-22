@@ -42,7 +42,7 @@ export const Login = ({logar}) => {
         <Input nome="Email" email={Email} handleChange={handleChange}/>
         <Input nome="Password" senha={Senha} handleChange={handleChangeSenha}/>
         <Button onClick={handleLogin} msg="Entrar"/>
-        <Forgot onClick={handleForgot} />
+        <Forgot onClick={handleForgot} msg='Esqueceu a senha'/>
         <Button onClick={handleCadastro} msg="Nao tem cadastro? clique aqui!"/>
       </Caixa>
     </Main>

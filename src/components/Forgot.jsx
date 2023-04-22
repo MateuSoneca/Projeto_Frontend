@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Forgot = ({onClick}) => {
+export const Forgot = ({onClick, msg}) => {
   return (
-    <a className='forgot' onClick={onClick}>Esquece a senha?</a>
+    <a className='forgot' onClick={onClick}>{msg}</a>
   )
 }

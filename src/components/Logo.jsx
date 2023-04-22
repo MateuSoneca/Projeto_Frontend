@@ -1,5 +1,5 @@
 import React from 'react'
-import nike from '../assets/nike.png'
+import logo from '../assets/logo1.png'
 import { useNavigate } from 'react-router-dom'
 
 export const Logo = ({msg}) => {
@@ -9,7 +9,7 @@ export const Logo = ({msg}) => {
   }
   return (
     <div className={msg}>
-         <img src={nike} onClick={handleClick}/>
+         <img src={logo} onClick={handleClick} className='logo'/>
     </div>
   )
 }

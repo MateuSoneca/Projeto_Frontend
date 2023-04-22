@@ -1,7 +1,7 @@
 .caixa {
     background-color: #ffffff;
     width: 28em;
-    height: 28em;
+    height: 31  em;
     margin-top: 10em;
     border-radius: 50px;
     padding:30px;   
@@ -9,6 +9,18 @@
 .centro {
     display:flex;
     justify-content: center;
+    margin:0
+}
+.logo {
+  width: 100px;
+  margin:0
+}
+a {
+  text-decoration: underline;
+}
+a:hover{
+  color:blue;
+  cursor: pointer;
 }
 .esquerda {
   display: flex;
