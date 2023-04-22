@@ -1,0 +1,9 @@
+:root {
+    background-color: #00BF63;
+}
+
+img {
+  width:140px;
+  display: flex;
+  justify-items: center;
+}
