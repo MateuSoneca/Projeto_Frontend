@@ -38,7 +38,7 @@ export const Login = ({logar}) => {
     <>
     <Main>
       <Caixa>
-        <Logo/>
+        <Logo msg='centro'/>
         <Input nome="Email" email={Email} handleChange={handleChange}/>
         <Input nome="Password" senha={Senha} handleChange={handleChangeSenha}/>
         <Button onClick={handleLogin} msg="Entrar"/>

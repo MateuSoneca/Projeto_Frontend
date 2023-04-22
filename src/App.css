@@ -10,6 +10,10 @@
     display:flex;
     justify-content: center;
 }
+.esquerda {
+  display: flex;
+  justify-content: left;
+}
 
   .input-container {
     height: 50px;
