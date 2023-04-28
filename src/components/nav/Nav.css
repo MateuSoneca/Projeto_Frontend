@@ -5,9 +5,14 @@ body{
   background-color:lightgray;
   height: 120px;
   display: flex;
-  justify-content:space-between;
+  flex-direction: row;
+  justify-content:start;
   align-items: center;
   font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
 }
 img {
   width: 80px;
@@ -18,18 +23,21 @@ img {
   flex-direction: column;
   width: 100%;
   height: 500px;
-  position: absolute;
-  top: 80px;
-  left: -100%;
+  position: relative;
+  top:310px;
+  left: 20px;
   opacity: 1;
   transition: all 0.5s ease;
+  margin-left: auto;
 }
 .nav-menu.active {
-  background-color: aqua;
+  align-items: center;
+  background-color: #515952;
   left: 0;
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 1;
+  width: 15%;
 }
 
 .menu-icon {
@@ -37,7 +45,28 @@ img {
   position: absolute;
   top:0;
   right: 0;
-  transform: translated(-100%,60%);
+  transform: translate(-100%,60%);
   font-size: 1.8rem;
+  cursor: pointer;
+  
+}
+.nav-links{
+  display: none;
+}
+.active{
+  display: block;
+}
+.active.links {
+  font-weight: bold;
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+.fa-solid.fa-user:hover{
+  color:white;
   cursor: pointer;
 }
