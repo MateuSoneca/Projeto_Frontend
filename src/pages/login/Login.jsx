@@ -1,11 +1,13 @@
-import { Caixa } from "../components/Caixa"
-import { Input } from "../components/Input"
-import { Main } from "../components/Main"
-import {Button} from "../components/Button"
-import {Forgot} from '../components/Forgot'
-import {Logo} from '../components/Logo'
+import { Caixa } from "../../components/Caixa"
+import { Input } from "../../components/Input"
+import { Main } from "../../components/Main"
+import {Button} from "../../components/Button"
+import {Forgot} from '../../components/Forgot'
+import {Logo} from '../../components/Logo'
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import './Login.css'
+
 
 
 export const Login = ({logar}) => {
@@ -17,6 +19,7 @@ export const Login = ({logar}) => {
     if(Email=="m"){
       logar();
       navigate('/login')
+      console.log('logou')
     }else{
       console.log('nao da')
     }

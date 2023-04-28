@@ -1,15 +1,14 @@
 .caixa {
     background-color: #ffffff;
-    width: 28em;
+    width: 28rem;
     height: 31  em;
-    margin-top: 10em;
+    margin-top: 10rem;
     border-radius: 50px;
     padding:30px;   
 }
 .centro {
     display:flex;
     justify-content: center;
-    margin:0
 }
 .logo {
   width: 100px;
@@ -17,6 +16,7 @@
 }
 a {
   text-decoration: underline;
+  color:black
 }
 a:hover{
   color:blue;
@@ -61,12 +61,12 @@ a:hover{
   }
 
   .submit {
-    background-color: #00BF63;
+    background-color: #00ff5f;
     border-radius: 12px;
     border: 0;
     font-weight: bold;
     box-sizing: border-box;
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     height: 50px;
@@ -86,3 +86,14 @@ a:hover{
     color: #4c4d56;
     font-size:14px;
   }
+
+main{
+  margin: 0;
+  background-color:#00ff5f;
+  padding: 37px;
+}
+body{
+  margin:0;
+  padding:0;
+  
+}
